@@ -1,0 +1,61 @@
+.head_title,
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 1px solid #000;
+}
+
+.succes {
+    background-color: green;
+}
+
+.no_succes {
+    background-color: red;
+}
+
+.wrapper {
+    display: flex;
+    Justify-content: space-around;
+
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+}
+
+.container,
+.container1 {
+    width: 35%;
+    text-align: center;
+}
+
+.titleLaptop,
+.titleUltradook {
+    text-align: center;
+}
+
+span,
+li {
+    padding: 3px;
+    margin: 5px;
+}
+
+span {
+    background-color: #EEDDFF;
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+
+.musarka {
+    width: 20px;
+    height: 25px;
+}
