@@ -3,8 +3,8 @@ function ViewLaptop(){
 };
 
 ViewLaptop.prototype.addLaptop = function(obj){
-    var allList = document.querySelector('#list-laptops'); // контейнер в который добавим новый лаптоп
-    var ulList = document.createElement('ul');
+    let allList = document.querySelector('#list-laptops'); // контейнер в который добавим новый лаптоп
+    let ulList = document.createElement('ul');
 
     ulList.innerHTML = '<li>' + obj.title + '</li>' +
     '<li>' + obj.ram + '</li>' +
@@ -15,11 +15,12 @@ ViewLaptop.prototype.addLaptop = function(obj){
     allList.appendChild(ulList);
 };
 
-ViewLaptop.prototype.getMessage = function(message, nameCl){
-    var block = document.querySelector('.container');
-    var form = document.querySelector('#laptop');
 
-    var divMessage = document.createElement('div');
+ViewLaptop.prototype.getMessage = function(message, nameCl){
+    let block = document.querySelector('.container');
+    let form = document.querySelector('#laptop');
+
+    let divMessage = document.createElement('div');
     divMessage.className = nameCl;
     divMessage.innerHTML = message;
 
