@@ -11,7 +11,7 @@ document.querySelector('#laptop').addEventListener('submit', function(event){
     let laptop = new Laptop(title, ram, year, processors, numberOf, material, weight);
     let viewLaptop = new ViewLaptop();
 
-    if (title === '' || ram === '' || year === '' || processors === '' || numberOf === '' || material === '' || weight === '') {
+    if (title.trim() == '' || ram.trim() == '' || year.trim() == '' || processors.trim() == '' || numberOf.trim() == '' || material.trim() == '' || weight.trim() == '') {
         viewLaptop.getMessage('Ошибка! Введите все данные!', 'no_succes');
     } else{
         viewLaptop.addLaptop(laptop);
